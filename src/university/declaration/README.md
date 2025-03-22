@@ -129,7 +129,7 @@ CopyEdit
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class university.Main {
     public static void main(String[] args) {
         Course math = new Course("Math 101", "MTH101", 3);
         Course physics = new Course("Physics 102", "PHY102", 4);
