@@ -11,6 +11,12 @@ public class Cat extends Animal
         this.color = color;
     }
 
+    public Cat(Animal animal)
+    {
+        super(animal);
+    }
+
+
     public void eat()
     {
         System.out.println("Cat eats");

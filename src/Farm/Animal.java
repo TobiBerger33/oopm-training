@@ -12,6 +12,12 @@ public abstract class Animal implements MovementBehavior
         this.age = age;
     }
 
+    public Animal(Animal animal)
+    {
+        this.name = animal.name;
+        this.age = animal.age;
+    }
+
     public abstract void eat();
 
     protected void makeSound()
