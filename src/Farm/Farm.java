@@ -1,8 +1,9 @@
-package Animals;
+package Farm;
 
 public class Farm
 {
     public Animal[] animals;
+    private MovementBehavior[] moveableUnits;
 
 
     public Farm(int maxAnimals)
@@ -31,5 +32,6 @@ public class Farm
                 animals[i].eat();
             }
         }
+
     }
 }

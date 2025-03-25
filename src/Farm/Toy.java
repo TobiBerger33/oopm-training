@@ -1,4 +1,4 @@
-package Animals;
+package Farm;
 
 public class Toy
 {

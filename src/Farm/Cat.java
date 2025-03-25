@@ -1,15 +1,14 @@
-package Animals;
+package Farm;
 
 public class Cat extends Animal
 {
     private String color;
     private Toy toy;
 
-    public Cat(String name, int age, String color, Toy toy)
+    public Cat(String name, int age, String color)
     {
         super(name, age);
         this.color = color;
-        this.toy = toy;
     }
 
     public void eat()
@@ -20,5 +19,11 @@ public class Cat extends Animal
     public Toy getToy()     //defensive getter
     {
         return new Toy(toy.getName(), toy.getPrice());
+    }
+
+    @Override
+    public void move()
+    {
+        System.out.println("Cat moves");
     }
 }

@@ -1,4 +1,4 @@
-package Animals;
+package Farm;
 
 public class Bird extends Animal
 {
@@ -20,4 +20,9 @@ public class Bird extends Animal
         System.out.println("Bird sound");
     }
 
+    @Override
+    public void move()
+    {
+        super.move();
+    }
 }

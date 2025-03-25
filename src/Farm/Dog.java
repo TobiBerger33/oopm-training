@@ -1,4 +1,4 @@
-package Animals;
+package Farm;
 
 public class Dog extends Animal
 {
@@ -15,4 +15,9 @@ public class Dog extends Animal
         System.out.println("Dog eats");
     }
 
+    @Override
+    public void move()
+    {
+        System.out.println("Dog moves");
+    }
 }
