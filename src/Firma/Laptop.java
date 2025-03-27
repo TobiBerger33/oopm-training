@@ -10,6 +10,8 @@ public class Laptop extends Device
 
     public void doWork()
     {
-        System.out.println("Laptop work " + name);
+        System.out.println("Laptop " + name + " is working");
     }
+
+
 }

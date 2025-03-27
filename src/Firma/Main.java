@@ -21,6 +21,14 @@ public class Main
 //        hans.startWorking();
 //        susi.startWorking();
 
+//        company.sendToWork();
+
+        Developer john = new JuniorDev(tablet);
+        Developer max = new SeniorDev(laptop);
+
+        company.addDev(john);
+        company.addDev(max);
+
         company.sendToWork();
 
 

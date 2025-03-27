@@ -8,9 +8,8 @@ public class PC extends Device
         super(name);
     }
 
-    @Override
     public void doWork()
     {
-        System.out.println("PC work " + name);
+        System.out.println("PC " + name + " is working");
     }
 }

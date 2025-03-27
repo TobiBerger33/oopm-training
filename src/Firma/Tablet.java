@@ -8,9 +8,8 @@ public class Tablet extends Device
         super(name);
     }
 
-    @Override
     public void doWork()
     {
-        System.out.println("Tablet work " + name);
+        System.out.println("Tablet " + name + " is working");
     }
 }
