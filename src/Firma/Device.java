@@ -1,6 +1,6 @@
 package Firma;
 
-public abstract class Device
+public abstract class Device implements WorkInterface
 {
     protected String name;
 

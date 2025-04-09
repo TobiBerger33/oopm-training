@@ -32,5 +32,19 @@ public class Main
         company.sendToWork();
 
 
+
+        WorkInterface workInterface = new Work();
+        workInterface.doWork();
+
+        WorkInterface workInterface2 = () ->
+        {
+            System.out.println("Doing hard work");
+        };
+
+        workInterface2.doWork();
+
+
+
+
     }
 }
