@@ -1,8 +1,9 @@
 package Firma;
 
-public class Developer
+public class Developer implements Comparable<Developer>
 {
     private Device device;
+    private int workingYears;
 
 
     public Developer(Device device)
@@ -24,5 +25,16 @@ public class Developer
     public void startWorking()
     {
         device.doWork();
+    }
+
+    @Override
+    public int compareTo(Developer o)
+    {
+        if(workingYears == o.workingYears)
+            return 0;
+        else if (workingYears > o.workingYears)
+            return 1;
+        else
+            return -1;
     }
 }
