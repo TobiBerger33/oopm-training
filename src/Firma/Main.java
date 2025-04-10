@@ -5,10 +5,10 @@ public class Main
     public static void main(String[] args)
     {
         Device tablet = new Tablet("iPad Air 5th Gen");
-        Developer hans = new Developer(tablet);
+        Developer hans = new Developer(tablet, 1);
 
         Device laptop = new Laptop("MacBook Air M2");
-        Developer susi = new Developer(laptop);
+        Developer susi = new Developer(laptop,5);
 
 //        hans.getDevice().doWork();
 //        susi.getDevice().doWork();
@@ -23,8 +23,8 @@ public class Main
 
 //        company.sendToWork();
 
-        Developer john = new JuniorDev(tablet);
-        Developer max = new SeniorDev(laptop);
+        Developer john = new JuniorDev(tablet,1);
+        Developer max = new SeniorDev(laptop,9);
 
         company.addDev(john);
         company.addDev(max);

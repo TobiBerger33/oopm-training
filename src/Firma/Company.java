@@ -1,6 +1,7 @@
 package Firma;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Company
 {
@@ -10,7 +11,6 @@ public class Company
     private List<Developer> developerLinkedList = new LinkedList<>();
     private Set<Developer> developerHashSet = new HashSet<>();
     private Map<String, String> developerMap = new HashMap<>();
-
 
 
     public Company(int count)
@@ -62,5 +62,20 @@ public class Company
             Collections.sort(developerList, Collections.reverseOrder());
         }
 
+
+
+        List<Developer> newDevs = developerLinkedList.stream()
+                .filter((developer) -> {return developer.getWorkingYears() > 2;})
+                .sorted()
+                .toList();
+
+
+        developerList   .stream()
+                        .skip(1)
+                        .forEach((developer) -> {
+                            System.out.println(developer.getWorkingYears());});
+
+
+        List<Developer> otherDev = developerList.stream().skip(1).toList();
     }
 }

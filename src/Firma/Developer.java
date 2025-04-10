@@ -6,9 +6,10 @@ public class Developer implements Comparable<Developer>
     private int workingYears;
 
 
-    public Developer(Device device)
+    public Developer(Device device, int workingYears)
     {
         this.device = device;
+        this.workingYears = workingYears;
     }
 
 
@@ -25,6 +26,11 @@ public class Developer implements Comparable<Developer>
     public void startWorking()
     {
         device.doWork();
+    }
+
+    public int getWorkingYears()
+    {
+        return workingYears;
     }
 
     @Override

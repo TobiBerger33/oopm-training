@@ -3,8 +3,8 @@ package Firma;
 public class SeniorDev extends Developer
 {
 
-    public SeniorDev(Device device)
+    public SeniorDev(Device device, int workingYears)
     {
-        super(device);
+        super(device, workingYears);
     }
 }
