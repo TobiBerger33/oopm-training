@@ -78,4 +78,24 @@ public class Company
 
         List<Developer> otherDev = developerList.stream().skip(1).toList();
     }
+
+//    public void print (int value)
+//    {
+//        System.out.println(value);
+//    }
+//
+//    public void print (double value)
+//    {
+//        System.out.println(value);
+//    }
+//
+//    public void print (String value)
+//    {
+//        System.out.println(value);
+//    }
+
+    public <AnyDataType> void print(AnyDataType value)
+    {
+        System.out.println(value);
+    }
 }

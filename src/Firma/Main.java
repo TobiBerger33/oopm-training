@@ -44,7 +44,34 @@ public class Main
         workInterface2.doWork();
 
 
+        company.print("five");
+        company.print(5);
 
+
+        Printer<String, Integer> printer = new Printer<>();
+
+        printer.addToList("five");
+        printer.addToList("six");
+        printer.addToList("seven");
+
+        printer.addToList2(5);
+
+
+        printer.printList();
+        printer.printList2();
+
+
+        Printer<Boolean, String> printer2 = new Printer<>();
+
+        printer2.addToList(true);
+        printer2.addToList(true);
+        printer2.addToList(false);
+
+        printer2.addToList2("correct!");
+        printer2.addToList2("wrong!");
+
+        printer2.printList();
+        printer2.printList2();
 
     }
 }
