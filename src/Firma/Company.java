@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 public class Company
 {
     private String name;
-    private Developer[] developers;
+    protected Developer[] developers;
     private List<Developer> developerList = new ArrayList<>();
     private List<Developer> developerLinkedList = new LinkedList<>();
     private Set<Developer> developerHashSet = new HashSet<>();
@@ -40,12 +40,14 @@ public class Company
             if(developers[i] != null)
             {
                 developers[i].startWorking();
+                developers[i].points += 10;
             }
         }
 
         for(Developer dev : developerList)
         {
             dev.startWorking();
+            dev.points += 10;
         }
 
         developerLinkedList.forEach((developer) -> { developer.startWorking(); });
@@ -93,6 +95,18 @@ public class Company
 //    {
 //        System.out.println(value);
 //    }
+
+
+    public void changeDevInfo(String name, int workingYears, int index)
+    {
+        Developer dev = developers[index];
+
+        if(dev != null)
+        {
+            dev.setName(name);
+            dev.setWorkingYears(workingYears);
+        }
+    }
 
     public <AnyDataType> void print(AnyDataType value)
     {

@@ -3,7 +3,9 @@ package Firma;
 public class Developer implements Comparable<Developer>
 {
     private Device device;
+    private String name;
     private int workingYears;
+    protected int points;
 
 
     public Developer(Device device, int workingYears)
@@ -12,6 +14,33 @@ public class Developer implements Comparable<Developer>
         this.workingYears = workingYears;
     }
 
+    public Developer(String name, int workingYears)
+    {
+        this.name = name;
+        this.workingYears = workingYears;
+        points = 0;
+    }
+
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    public void setWorkingYears(int workingYears)
+    {
+        this.workingYears = workingYears;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public int getPoints()
+    {
+        return points;
+    }
 
     public Device getDevice()
     {
